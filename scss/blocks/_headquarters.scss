@@ -1,0 +1,180 @@
+@use "../mixin" as *;
+
+.headquarters {
+  padding-bottom: 120px;
+}
+
+.headquarters__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headquarters__title {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-family: "Fraunces";
+  font-size: 24px;
+  font-weight: var(--main-title-font-weight);
+  line-height: 32px; 
+  color: var( --main-header-color);
+}
+
+.headquarters__address-wrapper {
+  display: flex;
+  row-gap: 80px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headquarters__address-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headquarters__kingdom-img {
+  width: 41px;
+  height: 49px;
+  margin-bottom: 48px;
+}
+
+.headquarters__address-title {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Fraunces";
+  font-size: 28px;
+  font-weight: var(--main-title-font-weight);
+  line-height: 36px;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.headquarters__address {
+  font-style: normal;
+}
+
+.headquarters__list {
+  display: flex;
+  @include list-unstyled;
+  row-gap: 1px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headquarters__link {
+  font-size: 16px;
+  font-weight: var(--main-text-font-weight);
+  line-height: 26px; 
+  text-decoration-line: none;
+  color: var(--main-color);
+}
+
+.headquarters__canada-img {
+  width: 52px;
+  height: 50px;
+  margin-bottom: 47px;
+}
+
+.headquarters__australia-img {
+  width: 49px;
+  height: 44px;
+  margin-bottom: 47px;
+}
+
+@media only screen and (min-width: 600px) {
+  
+  .headquarters {
+    padding-bottom: 144px;
+  }
+  
+  .headquarters__wrapper {
+    align-items: start;
+  }
+  
+  .headquarters__address-wrapper {
+    flex-direction: row;
+    column-gap: 18px;
+    align-items: start;
+  }
+  
+  .headquarters__address-box {
+    align-items: start;
+  }
+  
+  .headquarters__address-title {
+    margin-bottom: 21px;
+    font-size: 24px;
+  }
+  
+  .headquarters__list {
+    align-items: start;
+  }
+  
+  .headquarters__australia-img {
+    margin-bottom: 52px;
+  }
+  
+}
+
+@media only screen and (min-width: 650px) {
+  
+  .headquarters__address-wrapper {
+    column-gap: 40px;
+  }
+  
+}
+
+@media only screen and (min-width: 700px) {
+  
+  .headquarters__address-wrapper {
+    column-gap: 50px;
+  }
+  
+}
+
+@media only screen and (min-width: 850px) {
+  
+  
+  .headquarters {
+    padding-bottom: 168px;
+  }
+
+  .headquarters__wrapper {
+    padding-left: 85px;
+  }
+  
+  .headquarters__address-wrapper {
+    column-gap: 75px;
+  }
+  
+  .headquarters__kingdom-img {
+    margin-bottom: 46px;
+  }
+  
+  .headquarters__canada-img {
+    margin-bottom: 45px;
+  }
+  
+  .headquarters__australia-img {
+    margin-bottom: 50px;
+  }
+  
+  .headquarters__address-title {
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+  
+}  
+
+@media only screen and (min-width: 1020px) {
+  
+  .headquarters__address-wrapper {
+    column-gap: 108px;
+  }
+
+  .headquarters__address-box--canada {
+    margin-right: 100px;
+  }
+  
+}

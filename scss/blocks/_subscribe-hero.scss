@@ -1,0 +1,127 @@
+@use "../mixin" as *;
+
+.subscribe-hero {
+  padding-bottom: 120px;
+}
+
+.subscribe-hero__wrapper {
+  padding: 101px 10px 136px;
+  border-radius: 10px;
+  background-image: url("../images/subscribe.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subscribe-hero__title-wrapper {
+  max-width: 280px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subscribe-hero__title {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-family: "Fraunces";
+  font-size: 30px;
+  font-weight: var(--main-title-font-weight);
+  line-height: 40px; 
+  text-align: center;
+  color: var(--main-amenities-color);
+}
+
+.subscribe-hero__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--main-text-font-size);
+  font-weight: var(--main-text-font-weight);
+  line-height: 25px; 
+  text-align: center;
+  color: var(--main-amenities-color);
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 350px) {
+  
+  .subscribe-hero__wrapper {
+    padding: 101px 24px 136px;
+  }  
+
+  .subscribe-hero__title {
+    font-size: 35px;
+  }
+
+}
+
+@media only screen and (min-width: 365px) {
+
+  .subscribe-hero__title {
+    font-size: 40px;
+  }
+
+}
+
+@media only screen and (min-width: 450px) {
+  
+  .subscribe-hero__wrapper {
+    background-image: url("../images/subscribetablet.png");
+  }
+
+}
+
+@media only screen and (min-width: 550px) {
+
+  .subscribe-hero {
+    padding-bottom: 144px;
+  }
+  
+  .subscribe-hero__wrapper {
+    padding: 127px 58px 126px;
+  }
+  
+  .subscribe-hero__title-wrapper {
+    max-width: 400px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .subscribe-hero__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 48px; 
+    text-align: start;
+  }
+  
+  .subscribe-hero__text {
+    text-align: start;
+  }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+  .subscribe-hero {
+    padding-bottom: 168px;
+  }
+  
+  .subscribe-hero__wrapper {
+    padding: 134px 85px;
+    background-image: url("../images/subscribedesktop.png");
+  }
+  
+  .subscribe-hero__title-wrapper {
+    max-width: 485px;
+  }
+  
+  .subscribe-hero__title {
+    margin-bottom: 32px;
+    font-size: 72px;
+    line-height: 72px; 
+  }
+
+  .subscribe-hero__text {
+    line-height: 26px;
+  }
+
+}
